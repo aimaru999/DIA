@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ConsoleApp2.Core.Shipment
+namespace DocksGestionApp.Core.Shipment
 {
-    class Container
+    public class Container
     {
         public enum Size { large, small };
         int rWeight;
@@ -16,7 +16,7 @@ namespace ConsoleApp2.Core.Shipment
         {
             this.id = id;
 
-            if (weight == 0)
+            if (weight== Size.large)
             {
                 this.rWeight= 1500;
             }
@@ -41,6 +41,16 @@ namespace ConsoleApp2.Core.Shipment
         {
             return this.rWeight;
         }
-        
+
+        public override string ToString()
+        {
+            StringBuilder str = new StringBuilder();
+            str.Append("Container ID: ").Append(this.id).Append("\n");
+            str.Append("Weight:").Append(this.rWeight).Append(" Kg.\n\n");
+
+
+
+            return str.ToString();
+        }
     }
 }

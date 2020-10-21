@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "E:\\aaron\\Documentos\\DIA\\Practica2\\DIA\\ConsoleApp2\\ConsoleApp2.csproj": {}
+    "E:\\aaron\\Documentos\\DIA\\Practica2\\DIA\\ConsoleApp2\\DocksGestionApp.csproj": {}
   },
   "projects": {
-    "E:\\aaron\\Documentos\\DIA\\Practica2\\DIA\\ConsoleApp2\\ConsoleApp2.csproj": {
+    "E:\\aaron\\Documentos\\DIA\\Practica2\\DIA\\ConsoleApp2\\DocksGestionApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\aaron\\Documentos\\DIA\\Practica2\\DIA\\ConsoleApp2\\ConsoleApp2.csproj",
-        "projectName": "ConsoleApp2",
-        "projectPath": "E:\\aaron\\Documentos\\DIA\\Practica2\\DIA\\ConsoleApp2\\ConsoleApp2.csproj",
+        "projectUniqueName": "E:\\aaron\\Documentos\\DIA\\Practica2\\DIA\\ConsoleApp2\\DocksGestionApp.csproj",
+        "projectName": "DocksGestionApp",
+        "projectPath": "E:\\aaron\\Documentos\\DIA\\Practica2\\DIA\\ConsoleApp2\\DocksGestionApp.csproj",
         "packagesPath": "C:\\Users\\aaron\\.nuget\\packages\\",
         "outputPath": "E:\\aaron\\Documentos\\DIA\\Practica2\\DIA\\ConsoleApp2\\obj\\",
         "projectStyle": "PackageReference",

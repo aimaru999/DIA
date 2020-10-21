@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ConsoleApp2.Core.Truck
+namespace DocksGestionApp.Core.Shipment
 {
     class LargeTruck:Truck
     {
@@ -10,12 +10,13 @@ namespace ConsoleApp2.Core.Truck
         public const bool full = false;
         public const int remainingC = 2;
         public const String name = "Large Truck";
-        private int id;
+        
         public LargeTruck(int id)
             : base(id,cWeight, full,remainingC)
         {
 
         }
+
 
         public override string ToString()
         {

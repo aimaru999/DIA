@@ -1,40 +1,163 @@
-﻿using ConsoleApp2.Core.Truck;
+﻿
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading;
 
-namespace ConsoleApp2.Core.Shipment
+namespace DocksGestionApp.Core.Shipment
 {
     class ShipmentCargo
     {
         Fleet fleet;
         Ship ship;
 
-        public ShipmentCargo(Fleet fleet,Ship ship)
+        public ShipmentCargo(Fleet fleet, Ship ship)
         {
             this.fleet = fleet;
             this.ship = ship;
         }
 
-        public void AssignFleet()
+
+       public Ship GetShip()
         {
-            List <Container> auxContainer= this.ship.GetContainers();
+            return this.ship;
+        }
+
+
+        public bool AssignFleet()
+        {
+            bool solo = true;
+            
+            //list of free Large Trucks
+            var largeTruckList = fleet.GetFreeTrucks(0);
+            //list of fre Small Trucks
+            var smallTruckList = fleet.GetFreeTrucks(1);
+
+            //list of free Large Containers
+            var largeContainerList = ship.GetContainers(0);
+            //list of free Small Containers
+            var smallContainerList = ship.GetContainers(1);
             
 
 
-            foreach (Container c in auxContainer)
+            //There are enough big Trucks for the big Containers
+            if (largeTruckList.Count >= largeContainerList.Count)
             {
-                foreach(var t in this.fleet.GetFreeLargeTrucks())
+                
+                for (int i = 0; i < largeContainerList.Count; i++)
                 {
-                    if (c.getRWeight() == 1500)
+                    largeTruckList[i].SetContainer(largeContainerList[i]);
+                    ship.Delete(largeContainerList[i]);
+                }
+
+                largeTruckList = fleet.GetFreeTrucks(0);
+
+                //There are enough big Trucks for the small Containers
+                if (largeTruckList.Count >= smallContainerList.Count/2)
+                {
+                    int j = 0;
+                    for (int i = 0; i < smallContainerList.Count; i++)
                     {
-                        t.Full = true;
-                        c.setDeployed(true); 
+                        j = i / 2;
+
+                        largeTruckList[j].SetContainer(smallContainerList[i]);
+                        ship.Delete(smallContainerList[i]);
+
+                        
+                    }
+                //There are not enough big Trucks for the small Containers
+                }else if(largeTruckList.Count < smallContainerList.Count / 2)
+                {
+
+                    int j = 0;
+                    for (int i = 0; i < largeTruckList.Count*2; i++)
+                    {
+                        j = i / 2;
+
+                        largeTruckList[j].SetContainer(smallContainerList[i]);
+                        ship.Delete(smallContainerList[i]);
+
+
+                    }
+
+                    smallContainerList = ship.GetContainers(1);
+
+                    //There are enough small Trucks for the small Containers
+                    if(smallTruckList.Count >= smallContainerList.Count)
+                    {
+                        for (int i = 0; i < smallContainerList.Count; i++)
+                        {
+                            smallTruckList[i].SetContainer(smallContainerList[i]);
+                            ship.Delete(smallContainerList[i]);
+                        }
+                    }
+                    //There are not enough small Trucks for the small Containers
+                    else
+                    {
+                        for (int i = 0; i < smallTruckList.Count; i++)
+                        {
+                            smallTruckList[i].SetContainer(smallContainerList[i]);
+                            ship.Delete(smallContainerList[i]);
+                        }
+
+                        solo = false;
+
+
+                    }
+
+                }
+                
+
+
+            }
+            //There are not enough big Trucks for the big Containers
+            else if(largeTruckList.Count < largeContainerList.Count)
+            {
+                for (int i = 0; i < largeTruckList.Count; i++)
+                {
+                    largeTruckList[i].SetContainer(largeContainerList[i]);
+                    ship.Delete(largeContainerList[i]);
+                    
+                }
+
+               
+
+                //There are enough small Trucks for the small Containers
+                if (smallTruckList.Count >= smallContainerList.Count)
+                {
+                    for (int i = 0; i < smallContainerList.Count; i++)
+                    {
+                        smallTruckList[i].SetContainer(smallContainerList[i]);
+                        ship.Delete(smallContainerList[i]);
                         
                     }
                 }
+                //There are not enough small Trucks for the small Containers
+                else
+                {
+                    for (int i = 0; i < smallTruckList.Count; i++)
+                    {
+                        smallTruckList[i].SetContainer(smallContainerList[i]);
+                        ship.Delete(smallContainerList[i]);
+                        
+                    }
+   
+
+                }
+
+                solo = false;
             }
+
+            
+            return solo;
         }
+
+        public override string ToString()
+        {
+            return fleet.ToString();
+        }
+
 
 
     }

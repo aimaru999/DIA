@@ -1,0 +1,13 @@
+E:\aaron\Documentos\DIA\Practica2\DIA\ConsoleApp2\bin\Debug\netcoreapp3.1\DocksGestionApp.exe
+E:\aaron\Documentos\DIA\Practica2\DIA\ConsoleApp2\bin\Debug\netcoreapp3.1\DocksGestionApp.deps.json
+E:\aaron\Documentos\DIA\Practica2\DIA\ConsoleApp2\bin\Debug\netcoreapp3.1\DocksGestionApp.runtimeconfig.json
+E:\aaron\Documentos\DIA\Practica2\DIA\ConsoleApp2\bin\Debug\netcoreapp3.1\DocksGestionApp.runtimeconfig.dev.json
+E:\aaron\Documentos\DIA\Practica2\DIA\ConsoleApp2\bin\Debug\netcoreapp3.1\DocksGestionApp.dll
+E:\aaron\Documentos\DIA\Practica2\DIA\ConsoleApp2\bin\Debug\netcoreapp3.1\DocksGestionApp.pdb
+E:\aaron\Documentos\DIA\Practica2\DIA\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksGestionApp.AssemblyInfoInputs.cache
+E:\aaron\Documentos\DIA\Practica2\DIA\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksGestionApp.AssemblyInfo.cs
+E:\aaron\Documentos\DIA\Practica2\DIA\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksGestionApp.csproj.CoreCompileInputs.cache
+E:\aaron\Documentos\DIA\Practica2\DIA\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksGestionApp.dll
+E:\aaron\Documentos\DIA\Practica2\DIA\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksGestionApp.pdb
+E:\aaron\Documentos\DIA\Practica2\DIA\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksGestionApp.genruntimeconfig.cache
+E:\aaron\Documentos\DIA\Practica2\DIA\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksGestionApp.csprojAssemblyReference.cache
