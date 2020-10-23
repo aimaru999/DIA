@@ -19,6 +19,8 @@ namespace DocksGestionApp.Core.Shipment
             
         }
 
+        
+
         public void AddShipmentCargo()
         {
 
@@ -30,14 +32,17 @@ namespace DocksGestionApp.Core.Shipment
 
             do
             {
-                
+
+                Console.WriteLine(this.ship.ToString());
+
                 flag = cargo.AssignFleet();
                 dist.Add(cargo);
 
                 this.ship = cargo.GetShip();
+
+
                 old = new Fleet(this.fleet.GetFleet());
                 
-
 
                 cargo = new ShipmentCargo(old, this.ship);
 

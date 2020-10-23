@@ -47,8 +47,12 @@ namespace DocksGestionApp.Core.Shipment
                 
                 for (int i = 0; i < largeContainerList.Count; i++)
                 {
+                    this.fleet.Delete(largeTruckList[i]);
+
                     largeTruckList[i].SetContainer(largeContainerList[i]);
                     ship.Delete(largeContainerList[i]);
+
+                    this.fleet.Add(largeTruckList[i]);
                 }
 
                 largeTruckList = fleet.GetFreeTrucks(0);
@@ -61,10 +65,14 @@ namespace DocksGestionApp.Core.Shipment
                     {
                         j = i / 2;
 
+                        this.fleet.Delete(largeTruckList[j]);
+
                         largeTruckList[j].SetContainer(smallContainerList[i]);
                         ship.Delete(smallContainerList[i]);
 
-                        
+                        this.fleet.Add(largeTruckList[j]);
+
+
                     }
                 //There are not enough big Trucks for the small Containers
                 }else if(largeTruckList.Count < smallContainerList.Count / 2)
@@ -75,9 +83,12 @@ namespace DocksGestionApp.Core.Shipment
                     {
                         j = i / 2;
 
+                        this.fleet.Delete(largeTruckList[j]);
+
                         largeTruckList[j].SetContainer(smallContainerList[i]);
                         ship.Delete(smallContainerList[i]);
 
+                        this.fleet.Add(largeTruckList[i]);
 
                     }
 
@@ -88,8 +99,12 @@ namespace DocksGestionApp.Core.Shipment
                     {
                         for (int i = 0; i < smallContainerList.Count; i++)
                         {
+                            this.fleet.Delete(smallTruckList[i]);
+
                             smallTruckList[i].SetContainer(smallContainerList[i]);
                             ship.Delete(smallContainerList[i]);
+
+                            this.fleet.Add(smallTruckList[i]);
                         }
                     }
                     //There are not enough small Trucks for the small Containers
@@ -97,8 +112,13 @@ namespace DocksGestionApp.Core.Shipment
                     {
                         for (int i = 0; i < smallTruckList.Count; i++)
                         {
+                            this.fleet.Delete(smallTruckList[i]);
+
                             smallTruckList[i].SetContainer(smallContainerList[i]);
                             ship.Delete(smallContainerList[i]);
+
+                            this.fleet.Add(smallTruckList[i]);
+
                         }
 
                         solo = false;
@@ -116,9 +136,13 @@ namespace DocksGestionApp.Core.Shipment
             {
                 for (int i = 0; i < largeTruckList.Count; i++)
                 {
+                    this.fleet.Delete(largeTruckList[i]);
+
                     largeTruckList[i].SetContainer(largeContainerList[i]);
                     ship.Delete(largeContainerList[i]);
-                    
+
+                    this.fleet.Add(largeTruckList[i]);
+
                 }
 
                
@@ -128,9 +152,13 @@ namespace DocksGestionApp.Core.Shipment
                 {
                     for (int i = 0; i < smallContainerList.Count; i++)
                     {
+                        this.fleet.Delete(smallTruckList[i]);
+
                         smallTruckList[i].SetContainer(smallContainerList[i]);
                         ship.Delete(smallContainerList[i]);
-                        
+
+                        this.fleet.Add(smallTruckList[i]);
+
                     }
                 }
                 //There are not enough small Trucks for the small Containers
@@ -138,9 +166,14 @@ namespace DocksGestionApp.Core.Shipment
                 {
                     for (int i = 0; i < smallTruckList.Count; i++)
                     {
+                        this.fleet.Delete(smallTruckList[i]);
+
                         smallTruckList[i].SetContainer(smallContainerList[i]);
                         ship.Delete(smallContainerList[i]);
-                        
+
+
+                        this.fleet.Add(smallTruckList[i]);
+
                     }
    
 

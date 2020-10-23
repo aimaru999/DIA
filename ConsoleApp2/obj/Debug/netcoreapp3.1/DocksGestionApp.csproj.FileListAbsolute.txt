@@ -11,3 +11,16 @@ E:\aaron\Documentos\DIA\Practica2\DIA\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksG
 E:\aaron\Documentos\DIA\Practica2\DIA\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksGestionApp.pdb
 E:\aaron\Documentos\DIA\Practica2\DIA\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksGestionApp.genruntimeconfig.cache
 E:\aaron\Documentos\DIA\Practica2\DIA\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksGestionApp.csprojAssemblyReference.cache
+C:\Users\aimaru\source\repos\Practica2Ej2\ConsoleApp2\bin\Debug\netcoreapp3.1\DocksGestionApp.exe
+C:\Users\aimaru\source\repos\Practica2Ej2\ConsoleApp2\bin\Debug\netcoreapp3.1\DocksGestionApp.deps.json
+C:\Users\aimaru\source\repos\Practica2Ej2\ConsoleApp2\bin\Debug\netcoreapp3.1\DocksGestionApp.runtimeconfig.json
+C:\Users\aimaru\source\repos\Practica2Ej2\ConsoleApp2\bin\Debug\netcoreapp3.1\DocksGestionApp.runtimeconfig.dev.json
+C:\Users\aimaru\source\repos\Practica2Ej2\ConsoleApp2\bin\Debug\netcoreapp3.1\DocksGestionApp.dll
+C:\Users\aimaru\source\repos\Practica2Ej2\ConsoleApp2\bin\Debug\netcoreapp3.1\DocksGestionApp.pdb
+C:\Users\aimaru\source\repos\Practica2Ej2\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksGestionApp.csprojAssemblyReference.cache
+C:\Users\aimaru\source\repos\Practica2Ej2\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksGestionApp.AssemblyInfoInputs.cache
+C:\Users\aimaru\source\repos\Practica2Ej2\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksGestionApp.AssemblyInfo.cs
+C:\Users\aimaru\source\repos\Practica2Ej2\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksGestionApp.csproj.CoreCompileInputs.cache
+C:\Users\aimaru\source\repos\Practica2Ej2\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksGestionApp.dll
+C:\Users\aimaru\source\repos\Practica2Ej2\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksGestionApp.pdb
+C:\Users\aimaru\source\repos\Practica2Ej2\ConsoleApp2\obj\Debug\netcoreapp3.1\DocksGestionApp.genruntimeconfig.cache

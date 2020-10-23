@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\aaron\\Documentos\\DIA\\Practica2\\DIA\\ConsoleApp2\\DocksGestionApp.csproj": {}
+    "C:\\Users\\aimaru\\source\\repos\\Practica2Ej2\\ConsoleApp2\\DocksGestionApp.csproj": {}
   },
   "projects": {
-    "E:\\aaron\\Documentos\\DIA\\Practica2\\DIA\\ConsoleApp2\\DocksGestionApp.csproj": {
+    "C:\\Users\\aimaru\\source\\repos\\Practica2Ej2\\ConsoleApp2\\DocksGestionApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\aaron\\Documentos\\DIA\\Practica2\\DIA\\ConsoleApp2\\DocksGestionApp.csproj",
+        "projectUniqueName": "C:\\Users\\aimaru\\source\\repos\\Practica2Ej2\\ConsoleApp2\\DocksGestionApp.csproj",
         "projectName": "DocksGestionApp",
-        "projectPath": "E:\\aaron\\Documentos\\DIA\\Practica2\\DIA\\ConsoleApp2\\DocksGestionApp.csproj",
-        "packagesPath": "C:\\Users\\aaron\\.nuget\\packages\\",
-        "outputPath": "E:\\aaron\\Documentos\\DIA\\Practica2\\DIA\\ConsoleApp2\\obj\\",
+        "projectPath": "C:\\Users\\aimaru\\source\\repos\\Practica2Ej2\\ConsoleApp2\\DocksGestionApp.csproj",
+        "packagesPath": "C:\\Users\\aimaru\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aimaru\\source\\repos\\Practica2Ej2\\ConsoleApp2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aimaru\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

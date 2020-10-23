@@ -28,10 +28,17 @@ namespace DocksGestionApp.Core.Shipment
         {
             bigNum = 0;
             smallNum = 0;
-            this.fleet = l.ToList<Truck>();
+            this.fleet=new List<Truck>(); 
+            
+            foreach(var v in l)
+            {
+                this.fleet.Add(v);
+            }
 
 
         }
+
+
 
         public List<Truck> GetFleet()
         {

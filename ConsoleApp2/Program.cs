@@ -9,7 +9,7 @@ namespace DocksGestionApp
         {
             Fleet fleet = new Fleet();
             Ship ship = new Ship();
-            ShipmentCargo cargo = new ShipmentCargo(fleet,ship);
+           
             Distribution distribution = new Distribution(fleet, ship);
 
             for (int i = 0; i < 3; i++)
@@ -48,7 +48,7 @@ namespace DocksGestionApp
 
 
 
-          // Console.WriteLine(distribution.ToString());
+          Console.WriteLine(distribution.ToString());
 
 
 
